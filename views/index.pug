@@ -1,0 +1,12 @@
+html
+  head
+    title Test
+    link(rel='stylesheet', href='index.css')
+  body
+    h1 Test body
+    // a is declared in the server-side code
+    - var b = "test(aaaaa)";
+    - var c = a + " " + b;
+    b #{c}
+    script(src="http://api.songle.jp/v2/api.js")
+    script(src="index.js")
